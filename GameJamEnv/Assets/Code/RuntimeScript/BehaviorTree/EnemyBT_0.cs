@@ -15,6 +15,12 @@ public class EnemyBT_0 : EnemyBT
     [SerializeField]
     private float turnSpeed = 1f;
 
+    [ContextMenu("Drop Target")]
+    public void DropTarget()
+    {
+        target = null;
+    }
+
     protected override void Start()
     {
         enemyBT = this;
@@ -30,10 +36,11 @@ public class EnemyBT_0 : EnemyBT
         // create a paralleNode do move and attack
         ParallelNode offensiveModuleParalle = new ParallelNode();
         offensiveModuleParalle.AddChild(new MoveTowardsTargetNode(enemyBT, moveSpeed));
-        offensiveModuleParalle.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval));
         offensiveModuleParalle.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
+        offensiveModuleParalle.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval));
 
-        // if target not found, A* needed to reset position
+        // if target not found, navmesh needed to reset position
+
 
         // add the patrol sequence to the root
         root.AddChild(patrolSeq);
