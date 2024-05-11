@@ -18,7 +18,7 @@ public class AttackTargetNode : ActionNode
     public override NodeStatus Execute() {
         if (enemyBT.target == null)
         {
-            return NodeStatus.SUCCESS;
+            return NodeStatus.FAILURE;
         }
         target = enemyBT.target;
 

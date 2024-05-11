@@ -15,16 +15,19 @@ public class MoveTowardsTargetNode : ActionNode
 
     public override NodeStatus Execute() 
     {
-        MoveTowardsTarget();
-        return NodeStatus.SUCCESS;
+        if (enemyBT.target != null)
+        {
+            MoveTowardsTarget();
+            return NodeStatus.SUCCESS;
+        }else{
+            return NodeStatus.FAILURE;
+        }
     }
 
     public void MoveTowardsTarget()
     {
-        if(enemyBT.target != null){ 
-            Vector3 targetPosition = enemyBT.target.position;
-            Vector3 direction = (targetPosition - enemyBT.transform.position).normalized;
-            rb.linearVelocity = direction * moveSpeed;
-        }
+        Vector3 targetPosition = enemyBT.target.position;
+        Vector3 direction = (targetPosition - enemyBT.transform.position).normalized;
+        rb.linearVelocity = direction * moveSpeed;
     }
 }

@@ -19,7 +19,7 @@ public class LookAtTargetNode : ActionNode
     {
         if (enemyBT.target == null)
         {
-            return NodeStatus.SUCCESS;
+            return NodeStatus.FAILURE;
         }
         
         TurnToward();

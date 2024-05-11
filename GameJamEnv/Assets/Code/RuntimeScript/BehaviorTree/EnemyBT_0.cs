@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyBT_0 : EnemyBT
 {
@@ -14,6 +15,11 @@ public class EnemyBT_0 : EnemyBT
     private float executionInterval = 0.1f;
     [SerializeField]
     private float turnSpeed = 1f;
+    [SerializeField]
+    private Transform patrolPosition;
+
+    private NavMeshAgent navMeshAgent;
+    
 
     [ContextMenu("Drop Target")]
     public void DropTarget()
@@ -24,28 +30,32 @@ public class EnemyBT_0 : EnemyBT
     protected override void Start()
     {
         enemyBT = this;
+        navMeshAgent = GetComponent<NavMeshAgent>();
 
         root = new SelectorNode();
         root.debug = debug;
 
-        // create a sequence node to check if there is an enemy in the area
-        SequenceNode patrolSeq = new SequenceNode();
-        patrolSeq.AddChild(new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle));
-
-        // if success
-        // create a paralleNode do move and attack
-        ParallelNode offensiveModuleParalle = new ParallelNode();
-        offensiveModuleParalle.AddChild(new MoveTowardsTargetNode(enemyBT, moveSpeed));
-        offensiveModuleParalle.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
-        offensiveModuleParalle.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval));
+        ParallelNode continuousPatrolAndAttack = new ParallelNode();
+        continuousPatrolAndAttack.AddChild(new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle));
+        SequenceNode offensiveModuleSeq = new SequenceNode();
+        offensiveModuleSeq.AddChild(new MoveTowardsTargetNode(enemyBT, moveSpeed));
+        offensiveModuleSeq.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
+        offensiveModuleSeq.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval));
+        continuousPatrolAndAttack.AddChild(offensiveModuleSeq);
 
         // if target not found, navmesh needed to reset position
+        SequenceNode targetLostSeq = new SequenceNode();
+        targetLostSeq.AddChild(new WanderingNode(enemyBT, 2f, 1.5f, moveSpeed));
+        targetLostSeq.AddChild(new ReturnToPatrolNode(patrolPosition, navMeshAgent));
+
+        //targetLostSeq.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
 
 
-        // add the patrol sequence to the root
-        root.AddChild(patrolSeq);
+
         // add the offensive module to the root
-        root.AddChild(offensiveModuleParalle);
+        root.AddChild(continuousPatrolAndAttack);
+        // add the target lost sequence to the root
+        root.AddChild(targetLostSeq);
 
     }
 
