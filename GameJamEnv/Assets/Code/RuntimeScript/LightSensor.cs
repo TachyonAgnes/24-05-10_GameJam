@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.Rendering;
+using System;
 
 public class LightSensor : MonoBehaviour
 {
@@ -17,11 +16,20 @@ public class LightSensor : MonoBehaviour
 
     // for the light source, the type of object should be GameObject, since the most important information we need is position, rotation, and isActive
 
-    public bool isExposedToLight = false;
-    public bool isDebug = false;
+    public event Action<bool> OnExposeStatusChanged;
 
     // to start, we need to grab the reference of moonlight
     [SerializeField] private GameObject moonLight;
+
+    // exposed status editor variables
+    [SerializeField] private bool isExposedToLight = false;
+    [SerializeField] private bool isDebug = false;
+    [SerializeField] private float changeFormTime = 0.5f;
+    
+    // exposed status private variables
+    private bool lastRecordedStatus = false;
+    private float timeInStatus = 0f;
+    private bool isEventFired = false;
 
     // We need a list of artificial light sources
     private List<GameObject> artificalLightSource = new List<GameObject>();
@@ -96,6 +104,27 @@ public class LightSensor : MonoBehaviour
         return false;
     }
 
+
+    private void HandleExposeStatusEvent()
+    {
+        if (isExposedToLight != lastRecordedStatus)
+        {
+            lastRecordedStatus = isExposedToLight;
+            timeInStatus = 0f;
+            isEventFired = false;
+        }
+
+        // only fire event when time in status exceeds the set change form time.
+        timeInStatus += Time.deltaTime;
+        if ( timeInStatus > changeFormTime && !isEventFired )
+        {
+            isEventFired = true;
+            OnExposeStatusChanged?.Invoke(isExposedToLight);
+
+            Debug.Log("EventFired");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -103,13 +132,6 @@ public class LightSensor : MonoBehaviour
         // do a raycast backward to the forward of moonlight, check if the playerObj is exposed to the moonlight
         // if the playerObj is exposed to the moonlight, we need to do something
         RaycastHit hit;
-        if(!Physics.Raycast(transform.position, -moonLight.transform.forward, out hit)){
-            isExposedToLight = true;
-            if(isDebug){
-                Debug.Log("is exposed to MoonLight");  
-            }
-        }
-
         // check if the playerObj is exposed to the artificial light sources
         // if the list of artificial light sources is not empty
         if (artificalLightSource.Count > 0)
@@ -120,6 +142,7 @@ public class LightSensor : MonoBehaviour
                 if (CheckExposedToArtificialLight(lightSource))
                 {
                     isExposedToLight = true;
+
                     if (isDebug)
                     {
                         Debug.Log("is exposed to artifical light");
@@ -127,5 +150,20 @@ public class LightSensor : MonoBehaviour
                 }
             }
         }
+        else if (!Physics.Raycast(transform.position, -moonLight.transform.forward, out hit))
+        {
+            isExposedToLight = true;
+
+            if (isDebug)
+            {
+                Debug.Log("is exposed to MoonLight");
+            }
+        }
+        else
+        {
+            isExposedToLight = false;
+        }
+
+        HandleExposeStatusEvent();
     }
 }
