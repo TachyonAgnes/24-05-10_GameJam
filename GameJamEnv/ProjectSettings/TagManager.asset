@@ -12,9 +12,9 @@ TagManager:
   - Water
   - UI
   - ArtificialLight
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - LightSensor
   - 
   - 
   - 
