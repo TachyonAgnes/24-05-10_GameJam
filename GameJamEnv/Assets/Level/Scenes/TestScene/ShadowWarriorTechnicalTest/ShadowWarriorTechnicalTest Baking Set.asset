@@ -35,8 +35,10 @@ MonoBehaviour:
   - 3bf86046d79255e45a9209b1d162fa6b
   obsoleteScenesToNotBake: []
   m_LightingScenarios:
-  - day
-  - night
+  - Morning
+  - Noon
+  - Afternoon
+  - Midnight
   cellDescs:
     m_Keys: 00000000060000000100000007000000
     m_Values:
@@ -107,8 +109,10 @@ MonoBehaviour:
     m_Asset: {fileID: 0}
   scenarios:
     m_Keys:
-    - night
-    - day
+    - Noon
+    - Morning
+    - Afternoon
+    - Midnight
     m_Values:
     - sceneHash: -790599703
       cellDataAsset:
@@ -163,6 +167,72 @@ MonoBehaviour:
       cellOptionalDataAsset:
         m_AssetGUID: 5f186ca2ed1b11d48896927fa17bd56d
         m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\5f186ca2ed1b11d48896927fa17bd56d.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+    - sceneHash: -790599703
+      cellDataAsset:
+        m_AssetGUID: 3c69327cc817f7f478490e405f0456aa
+        m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\3c69327cc817f7f478490e405f0456aa.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+      cellOptionalDataAsset:
+        m_AssetGUID: bb69055d087f1ce4392ec367298851c9
+        m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\bb69055d087f1ce4392ec367298851c9.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+    - sceneHash: -790599703
+      cellDataAsset:
+        m_AssetGUID: 2fcc5ce6450c8cf4da02ec0437055e76
+        m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\2fcc5ce6450c8cf4da02ec0437055e76.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+      cellOptionalDataAsset:
+        m_AssetGUID: f15ce1fe51dbbf34fa85c6c2b2bfda26
+        m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\f15ce1fe51dbbf34fa85c6c2b2bfda26.bytes
         m_ElementSize: 131072
         m_StreamableCellDescs:
           m_Keys: 00000000060000000100000007000000
@@ -239,7 +309,7 @@ MonoBehaviour:
   supportLayerMaskChunkSize: 0
   supportOffsetsChunkSize: 98304
   supportDataChunkSize: 262144
-  lightingScenario: night
+  lightingScenario: Afternoon
   version: 1
   freezePlacement: 0
   probeOffset: {x: 0, y: 0, z: 0}
