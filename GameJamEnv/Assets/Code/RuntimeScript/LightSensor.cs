@@ -18,6 +18,7 @@ public class LightSensor : MonoBehaviour
     // for the light source, the type of object should be GameObject, since the most important information we need is position, rotation, and isActive
 
     public bool isExposedToLight = false;
+    public bool isDebug = false;
 
     // to start, we need to grab the reference of moonlight
     [SerializeField] private GameObject moonLight;
@@ -104,7 +105,9 @@ public class LightSensor : MonoBehaviour
         RaycastHit hit;
         if(!Physics.Raycast(transform.position, -moonLight.transform.forward, out hit)){
             isExposedToLight = true;
-            Debug.Log("is exposed to MoonLight");
+            if(isDebug){
+                Debug.Log("is exposed to MoonLight");  
+            }
         }
 
         // check if the playerObj is exposed to the artificial light sources
@@ -117,7 +120,10 @@ public class LightSensor : MonoBehaviour
                 if (CheckExposedToArtificialLight(lightSource))
                 {
                     isExposedToLight = true;
-                    Debug.Log("is exposed to artifical light");
+                    if (isDebug)
+                    {
+                        Debug.Log("is exposed to artifical light");
+                    }
                 }
             }
         }
