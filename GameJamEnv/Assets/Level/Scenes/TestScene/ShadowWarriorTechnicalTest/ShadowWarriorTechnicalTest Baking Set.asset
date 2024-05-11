@@ -35,7 +35,8 @@ MonoBehaviour:
   - 3bf86046d79255e45a9209b1d162fa6b
   obsoleteScenesToNotBake: []
   m_LightingScenarios:
-  - Default
+  - day
+  - night
   cellDescs:
     m_Keys: 00000000060000000100000007000000
     m_Values:
@@ -106,7 +107,8 @@ MonoBehaviour:
     m_Asset: {fileID: 0}
   scenarios:
     m_Keys:
-    - Default
+    - night
+    - day
     m_Values:
     - sceneHash: -790599703
       cellDataAsset:
@@ -128,6 +130,39 @@ MonoBehaviour:
       cellOptionalDataAsset:
         m_AssetGUID: f7112511ea750094f93906fca1f05d0b
         m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\f7112511ea750094f93906fca1f05d0b.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+    - sceneHash: -790599703
+      cellDataAsset:
+        m_AssetGUID: c96a42a9a5887da439b7147a8fd45c58
+        m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\c96a42a9a5887da439b7147a8fd45c58.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+      cellOptionalDataAsset:
+        m_AssetGUID: 5f186ca2ed1b11d48896927fa17bd56d
+        m_StreamableAssetPath: APVStreamingAssets\57b6d16005f33bd43b2c8cdd545a91f1\5f186ca2ed1b11d48896927fa17bd56d.bytes
         m_ElementSize: 131072
         m_StreamableCellDescs:
           m_Keys: 00000000060000000100000007000000
@@ -204,7 +239,7 @@ MonoBehaviour:
   supportLayerMaskChunkSize: 0
   supportOffsetsChunkSize: 98304
   supportDataChunkSize: 262144
-  lightingScenario: Default
+  lightingScenario: night
   version: 1
   freezePlacement: 0
   probeOffset: {x: 0, y: 0, z: 0}
