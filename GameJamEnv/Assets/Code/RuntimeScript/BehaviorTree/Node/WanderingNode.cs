@@ -20,7 +20,7 @@ private float wanderRadius;
     {
         // if target is found, skip wandering
         if (enemyBT.target != null) {
-            return NodeStatus.SUCCESS;
+            return NodeStatus.FAILURE;
         }
 
         if (wanderTimer >= wanderTimerMax)
@@ -34,7 +34,8 @@ private float wanderRadius;
             wanderTimer += Time.deltaTime;
         }
 
-        if (Vector3.Distance(enemyBT.transform.position, wanderPoint) < 1)
+
+        if (Vector3.Distance(enemyBT.transform.position, wanderPoint) < 3f)
         {
             return NodeStatus.SUCCESS;
         }

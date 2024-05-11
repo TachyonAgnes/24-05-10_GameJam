@@ -45,8 +45,8 @@ public class EnemyBT_0 : EnemyBT
 
         // if target not found, navmesh needed to reset position
         SequenceNode targetLostSeq = new SequenceNode();
-        targetLostSeq.AddChild(new WanderingNode(enemyBT, 2f, 1.5f, moveSpeed));
-        targetLostSeq.AddChild(new ReturnToPatrolNode(patrolPosition, navMeshAgent));
+        targetLostSeq.AddChild(new WanderingNode(enemyBT, 5f, 5f, moveSpeed));
+        targetLostSeq.AddChild(new ReturnToPatrolNode(enemyBT, patrolPosition, navMeshAgent));
 
         //targetLostSeq.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
 
