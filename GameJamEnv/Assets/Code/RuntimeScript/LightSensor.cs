@@ -19,7 +19,7 @@ public class LightSensor : MonoBehaviour
     public event Action<bool> OnExposeStatusChanged;
 
     // to start, we need to grab the reference of moonlight
-    [SerializeField] private GameObject moonLight;
+    [SerializeField] private GameObject sunLight;
 
     // exposed status editor variables
     [SerializeField] private bool isExposedToLight = false;
@@ -37,9 +37,9 @@ public class LightSensor : MonoBehaviour
 
     void Start(){ 
     // check if the moonlight is null
-        if(moonLight == null){
-            // if it is null, we need to find the moonlight in the scene
-            moonLight = GameObject.Find("MoonLight").GetComponent<GameObject>();
+        if(sunLight == null){
+            // if it is null, we need to find the sun in the scene
+            sunLight = GameObject.Find("Sun").GetComponent<GameObject>();
         }
     }
 
@@ -150,13 +150,13 @@ public class LightSensor : MonoBehaviour
                 }
             }
         }
-        else if (!Physics.Raycast(transform.position, -moonLight.transform.forward, out hit))
+        else if (!Physics.Raycast(transform.position, -sunLight.transform.forward, out hit))
         {
             isExposedToLight = true;
 
             if (isDebug)
             {
-                Debug.Log("is exposed to MoonLight");
+                Debug.Log("is exposed to SunLight");
             }
         }
         else

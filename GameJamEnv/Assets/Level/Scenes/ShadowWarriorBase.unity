@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2325.4172, g: 2524.4944, b: 3510.9106, a: 1}
+  m_IndirectSpecularColor: {r: 2326.4495, g: 2535.3733, b: 3544.391, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01edbb00fe77a954d8dc3965a0c6451f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moonLight: {fileID: 1621009638}
+  sunLight: {fileID: 1331783153}
   isExposedToLight: 0
   isDebug: 0
   changeFormTime: 0.5
@@ -2399,9 +2399,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 804334847}
     m_Modifications:
+    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.48e-42
+      objectReference: {fileID: 0}
+    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2878991402550665526, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
       propertyPath: m_Name
       value: WeatherSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7657831967235475383, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2459,6 +2491,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f10c00bdad7604d8b5abc96d3f98fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1331783153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6092289214913036397, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
+  m_PrefabInstance: {fileID: 1331783151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1443232474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,11 +2749,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508514301}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1621009638 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3035872776288178126, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-  m_PrefabInstance: {fileID: 1331783151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1670961939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3405,7 +3437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a83d2f7ae04ab6f4f99b0d85377be998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializedBakingSet: {fileID: 11400000, guid: 57b6d16005f33bd43b2c8cdd545a91f1, type: 2}
+  serializedBakingSet: {fileID: 11400000, guid: 4e01890a6619a3f44a3ff0a97ff33de8, type: 2}
   sceneGUID: 3bf86046d79255e45a9209b1d162fa6b
   obsoleteAsset: {fileID: 0}
   obsoleteCellSharedDataAsset: {fileID: 0}
