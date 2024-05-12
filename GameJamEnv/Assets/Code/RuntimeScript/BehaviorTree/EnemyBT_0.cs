@@ -21,6 +21,8 @@ public class EnemyBT_0 : EnemyBT
     private float turnSpeed = 1f;
     [SerializeField]
     private Transform patrolPosition;
+    [SerializeField]
+    private LayerMask obstacleLayerMask;
 
     private NavMeshAgent navMeshAgent;
     
@@ -32,7 +34,7 @@ public class EnemyBT_0 : EnemyBT
         target = null;
     }
 
-    protected override void Start()
+    protected override void Awake()
     {
         enemyBT = this;
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -42,13 +44,14 @@ public class EnemyBT_0 : EnemyBT
         root.debug = debug;
 
         ParallelNode continuousPatrolAndAttack = new ParallelNode();
-        continuousPatrolAndAttack.AddChild(new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle, navMeshAgent, moveSpeed_fast, moveSpeed_normal));
+        continuousPatrolAndAttack.AddChild(
+            new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle, navMeshAgent, moveSpeed_fast, moveSpeed_normal, obstacleLayerMask));
+        
         SequenceNode offensiveModuleSeq = new SequenceNode();
         offensiveModuleSeq.AddChild(new MoveTowardsTargetNode(enemyBT, navMeshAgent));
 
         attackTargetNode = new AttackTargetNode(enemyBT, attackingAngle, executionInterval, attackingRange);
         offensiveModuleSeq.AddChild(attackTargetNode);
-
         continuousPatrolAndAttack.AddChild(offensiveModuleSeq);
 
         // if target not found, navmesh needed to reset position
