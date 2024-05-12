@@ -22,15 +22,15 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Color.r
-    value: 1
+    value: 0.8616352
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Color.g
-    value: 0.77672946
+    value: 0.11588341
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Color.b
-    value: 0.77672946
+    value: 0.09483396
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Color.a
@@ -38,7 +38,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Intensity
-    value: 176.5298
+    value: 1540.1556
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Range
@@ -58,7 +58,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Shadows.m_Type
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Shadows.m_Resolution
@@ -198,27 +198,27 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ColorTemperature
-    value: 4100
+    value: 6500
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_UseColorTemperature
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_BoundingSphereOverride.x
-    value: 1.0829418e+24
+    value: 42054020
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_BoundingSphereOverride.y
-    value: 4.8418473e+30
+    value: 4.5452035e+30
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_BoundingSphereOverride.z
-    value: 2.3750396e+20
+    value: 2.7081723e+23
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_BoundingSphereOverride.w
-    value: 6.573344e+28
+    value: 7.4936693e+31
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_UseBoundingSphereOverride
@@ -238,7 +238,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ShadowAngle
-    value: 0
+    value: 2.5
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_LightUnit
@@ -250,7 +250,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_EnableSpotReflector
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
   m_ExcludedProperties: []
   m_CoupledType:
