@@ -43,28 +43,28 @@ public class LightSensor : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider col)
     {
         // check if the playerObj has touched the artificial light sources
         // if layer equals to the layer of artificial light sources
-        if(collision.gameObject.layer == LayerMask.NameToLayer("ArtificialLight")){
+        if(col.gameObject.layer == LayerMask.NameToLayer("ArtificialLight")){
             // grab the reference of the artificial light sources
-            artificalLightSource.Add(collision.gameObject);
+            artificalLightSource.Add(col.gameObject);
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider col)
     {
         // check if the playerObj has exited the artificial light sources
         // if layer equals to the layer of artificial light sources
-        if(collision.gameObject.layer == LayerMask.NameToLayer("ArtificialLight")){
+        if(col.gameObject.layer == LayerMask.NameToLayer("ArtificialLight")){
             // grab the reference of the artificial light sources
-            artificalLightSource.Remove(collision.gameObject);
+            artificalLightSource.Remove(col.gameObject);
         }
     }
 
     // check if playerObject exposed to the artificial light
-    private bool CheckExposedToArtificialLight(GameObject lightSource){
+    private bool CheckExposedToIndividualArtificialLight(GameObject lightSource){
         // if pointlight
         if (lightSource.GetComponent<Light>().type == UnityEngine.LightType.Point)
         {
@@ -105,6 +105,41 @@ public class LightSensor : MonoBehaviour
     }
 
 
+    private bool CheckExposedToArtificalLight()
+    {
+        // check if the playerObj is exposed to the artificial light sources
+        foreach (GameObject lightSource in artificalLightSource)
+        {
+            if (CheckExposedToIndividualArtificialLight(lightSource))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
+    private bool CheckExposedToNaturalLight()
+    {
+        RaycastHit hit;
+        
+        if(Physics.Raycast(transform.position, -sunLight.transform.forward, out hit))
+        {
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+
     private void HandleExposeStatusEvent()
     {
         if (isExposedToLight != lastRecordedStatus)
@@ -120,37 +155,22 @@ public class LightSensor : MonoBehaviour
         {
             isEventFired = true;
             OnExposeStatusChanged?.Invoke(isExposedToLight);
-
-            Debug.Log("EventFired");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // check if the playerObj is exposed to the moonlight
-        // do a raycast backward to the forward of moonlight, check if the playerObj is exposed to the moonlight
-        // if the playerObj is exposed to the moonlight, we need to do something
-        RaycastHit hit;
-        // check if the playerObj is exposed to the artificial light sources
-        // if the list of artificial light sources is not empty
-        if (artificalLightSource.Count > 0)
+        if (CheckExposedToArtificalLight())
         {
-            // check if the playerObj is exposed to the artificial light sources
-            foreach (GameObject lightSource in artificalLightSource)
-            {
-                if (CheckExposedToArtificialLight(lightSource))
-                {
-                    isExposedToLight = true;
+            isExposedToLight = true;
 
-                    if (isDebug)
-                    {
-                        Debug.Log("is exposed to artifical light");
-                    }
-                }
+            if (isDebug)
+            {
+                Debug.Log("is exposed to artifical light");
             }
         }
-        else if (!Physics.Raycast(transform.position, -sunLight.transform.forward, out hit))
+        else if (CheckExposedToNaturalLight())
         {
             isExposedToLight = true;
 
