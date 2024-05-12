@@ -1764,8 +1764,8 @@ MonoBehaviour:
   playerMaterials:
   - {fileID: 2100000, guid: 1314d18783864d047aef65d1a8c30628, type: 2}
   - {fileID: 2100000, guid: acc9f56b36d76344ca5ee32af724b642, type: 2}
-  dissolveOffsetY_Exposed: -1.2
-  dissolveOffsetY_Hidden: 1.2
+  dissolveOffsetY_Exposed: -1.5
+  dissolveOffsetY_Hidden: 1.5
   shadowPlayerIndicator: {fileID: 4807196880995014938}
   hideVFXPrefab: {fileID: 5607819269926399345, guid: ef38724d22bc069419fd33ed2207c377, type: 3}
 --- !u!1 &4556870824189683500
@@ -2101,10 +2101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01edbb00fe77a954d8dc3965a0c6451f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moonLight: {fileID: 0}
+  sunLight: {fileID: 0}
   isExposedToLight: 0
   isDebug: 0
   changeFormTime: 0.15
+  lightObstacleLayermask:
+    serializedVersion: 2
+    m_Bits: 409
 --- !u!54 &4199017195683978790
 Rigidbody:
   m_ObjectHideFlags: 0

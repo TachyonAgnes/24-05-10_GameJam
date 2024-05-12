@@ -25,6 +25,7 @@ public class LightSensor : MonoBehaviour
     [SerializeField] private bool isExposedToLight = false;
     [SerializeField] private bool isDebug = false;
     [SerializeField] private float changeFormTime = 0.5f;
+    [SerializeField] private LayerMask lightObstacleLayermask;
     
     // exposed status private variables
     private bool lastRecordedStatus = false;
@@ -123,20 +124,8 @@ public class LightSensor : MonoBehaviour
     private bool CheckExposedToNaturalLight()
     {
         RaycastHit hit;
-        
-        if(Physics.Raycast(transform.position, -sunLight.transform.forward, out hit))
-        {
-            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
-            {
-                return true;
-            }
 
-            return false;
-        }
-        else
-        {
-            return true;
-        }
+        return !Physics.Raycast(transform.position, -sunLight.transform.forward, out hit, Mathf.Infinity, lightObstacleLayermask);
     }
 
 
