@@ -2432,6 +2432,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightSensor: {fileID: 5560669337104486595}
   playerInput: {fileID: 135756642000475821}
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  shadowAttackAudioClip: {fileID: 8300000, guid: 0eeefa96a76541c4ea77b72b7f0b7067, type: 3}
 --- !u!135 &4859836208723281064
 SphereCollider:
   m_ObjectHideFlags: 0

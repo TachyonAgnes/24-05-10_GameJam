@@ -8,6 +8,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private StarterAssetsInputs playerInput;
     [SerializeField] private LayerMask enemyLayerMask;
 
+    [Space]
+    [SerializeField] private AudioClip shadowAttackAudioClip;
     private List<EnemyKilledHandler> enemiesInRange = new List<EnemyKilledHandler>();
 
     private void OnTriggerEnter(Collider other)
@@ -66,6 +68,10 @@ public class PlayerAttack : MonoBehaviour
             else
             {
                 enemyToKill.KilledByShadow();
+
+                // play sfx
+                AudioSource.PlayClipAtPoint(shadowAttackAudioClip, transform.position, 1);
+
             }
 
             enemiesInRange.Remove(enemyToKill);

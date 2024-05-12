@@ -2194,10 +2194,6 @@ PrefabInstance:
       propertyPath: moonLight
       value: 
       objectReference: {fileID: 2114283754330233424}
-    - target: {fileID: 8760951072997060581, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
-      propertyPath: enemyLayerMask.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

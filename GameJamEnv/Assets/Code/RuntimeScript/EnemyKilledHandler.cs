@@ -28,6 +28,8 @@ public class EnemyKilledHandler : MonoBehaviour
         {
             enemyMaterials[i] = new Material(mr.materials[i]);
         }
+
+        mr.materials = enemyMaterials;
     }
 
 
@@ -55,6 +57,7 @@ public class EnemyKilledHandler : MonoBehaviour
         for (int i = 0; i < enemyMaterials.Length; i++)
         {
             enemyMaterials[i].DOFloat(1f, DISSOLVE, duration);
+
         }
     }
 }
