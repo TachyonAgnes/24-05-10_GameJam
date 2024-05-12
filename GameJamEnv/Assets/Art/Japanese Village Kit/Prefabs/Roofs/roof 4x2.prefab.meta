@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 73b75cb2add5e714aa0116e61badd8a7
+timeCreated: 1559152653
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Roofs/roof 4x2.prefab
+  uploadId: 631143

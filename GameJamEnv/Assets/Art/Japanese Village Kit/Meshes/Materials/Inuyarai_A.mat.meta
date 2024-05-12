@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ba9b4f9c27b47a64b9dbad40503b9729
+timeCreated: 1561724769
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Meshes/Materials/Inuyarai_A.mat
+  uploadId: 631143

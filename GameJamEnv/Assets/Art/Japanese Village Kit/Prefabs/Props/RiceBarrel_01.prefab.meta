@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d5492785799b51e49a223ae36a20ba2d
+timeCreated: 1562777155
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/RiceBarrel_01.prefab
+  uploadId: 631143

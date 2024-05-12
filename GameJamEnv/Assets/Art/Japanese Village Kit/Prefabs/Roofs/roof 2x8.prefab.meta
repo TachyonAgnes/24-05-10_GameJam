@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 534259fd0121d8643a442415dddf6784
+timeCreated: 1559152656
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Roofs/roof 2x8.prefab
+  uploadId: 631143

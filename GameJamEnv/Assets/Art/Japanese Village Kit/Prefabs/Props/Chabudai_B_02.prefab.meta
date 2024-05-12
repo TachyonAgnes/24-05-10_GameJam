@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 015159395b504044cb9e4d2ce1ad3049
+timeCreated: 1561688602
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/Chabudai_B_02.prefab
+  uploadId: 631143

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c31c33b2adcda6841a45888a451da9e9
+timeCreated: 1433292968
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Meshes/Materials/tatami.mat
+  uploadId: 631143

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fcb558178be9e964f84dab1f1bdc0cbd
+timeCreated: 1561755884
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/Kakemono_A_03.prefab
+  uploadId: 631143

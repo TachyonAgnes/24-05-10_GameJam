@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b7114a3a5cf4d7c4a97c21bfa8660007
+timeCreated: 1562777197
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/Cart_A_Wheel_L_01.prefab
+  uploadId: 631143

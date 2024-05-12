@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 531184425bf59f548915381cdf2e946f
+timeCreated: 1562777132
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/Cart_A_02.prefab
+  uploadId: 631143

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7ae264bc454a1b84d8ce528d13d6f17f
+timeCreated: 1559152634
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Roofs/roof side end x2.prefab
+  uploadId: 631143

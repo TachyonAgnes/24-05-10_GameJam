@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d8ad184160d6bf844a79b001042bf260
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Shaders/Aizome.shader
+  uploadId: 631143

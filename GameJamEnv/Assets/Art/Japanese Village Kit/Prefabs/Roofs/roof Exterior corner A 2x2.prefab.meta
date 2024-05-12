@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f2dab6671826f5346ac9829dd1fc458d
+timeCreated: 1559152310
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Roofs/roof Exterior corner A 2x2.prefab
+  uploadId: 631143

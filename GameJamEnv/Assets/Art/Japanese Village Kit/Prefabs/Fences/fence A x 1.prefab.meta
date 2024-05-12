@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5c5a197aa5828b446980c28188636f23
+timeCreated: 1558965559
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Fences/fence A x 1.prefab
+  uploadId: 631143

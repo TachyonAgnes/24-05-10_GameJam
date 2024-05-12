@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c4f73a0439406004a81e633375e6f55e
+timeCreated: 1562776716
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Meshes/Materials/Cart_A_01.mat
+  uploadId: 631143

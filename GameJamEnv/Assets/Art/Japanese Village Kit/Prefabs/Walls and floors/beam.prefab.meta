@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a3b01eca6bfcdd04dac265c9fe34b0dc
+timeCreated: 1433295371
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Walls and floors/beam.prefab
+  uploadId: 631143

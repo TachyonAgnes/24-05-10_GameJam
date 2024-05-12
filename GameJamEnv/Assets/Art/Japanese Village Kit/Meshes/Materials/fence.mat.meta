@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4fd73aad7aac4b846bc32e3c3304f621
+timeCreated: 1433292968
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Meshes/Materials/fence.mat
+  uploadId: 631143

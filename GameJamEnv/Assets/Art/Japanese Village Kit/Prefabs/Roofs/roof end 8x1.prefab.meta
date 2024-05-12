@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b52dbc3771afee143bf60121eaa90676
+timeCreated: 1559152637
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Roofs/roof end 8x1.prefab
+  uploadId: 631143

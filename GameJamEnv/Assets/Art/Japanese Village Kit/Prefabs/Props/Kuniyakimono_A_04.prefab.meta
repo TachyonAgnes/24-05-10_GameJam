@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 011f8ec05c8d7054bbe2e20685420ed0
+timeCreated: 1561688564
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/Kuniyakimono_A_04.prefab
+  uploadId: 631143

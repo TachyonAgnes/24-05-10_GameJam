@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac9357ed1d5b5234b8027ac0d5b8593d
+timeCreated: 1484240871
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Manor.prefab
+  uploadId: 631143

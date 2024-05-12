@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 995829aaa8dd1eb47a14260967d56beb
+timeCreated: 1558965566
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Balcony/balcony C x 1.prefab
+  uploadId: 631143

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4b4c30ad9c6ded74d9861216304fc8c2
+timeCreated: 1558966880
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Roofs B/roof B Interior 4x8.prefab
+  uploadId: 631143

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 72ff168e7582f7c4eba5ee901b58219f
+timeCreated: 1561725963
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Prefabs/Props/Inuyarai_A_01_x8.prefab
+  uploadId: 631143

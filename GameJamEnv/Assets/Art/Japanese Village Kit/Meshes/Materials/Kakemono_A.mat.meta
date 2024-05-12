@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 37ae48fee0dc8ef46af51562b9eb4d50
+timeCreated: 1561754944
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Meshes/Materials/Kakemono_A.mat
+  uploadId: 631143

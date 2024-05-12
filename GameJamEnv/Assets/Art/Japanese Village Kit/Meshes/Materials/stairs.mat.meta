@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f78017788982bfe478aef80a15962b2a
+timeCreated: 1433362790
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 33052
+  packageName: Japanese Village Kit
+  packageVersion: 2.5.0
+  assetPath: Assets/Japanese Village Kit/Meshes/Materials/stairs.mat
+  uploadId: 631143
