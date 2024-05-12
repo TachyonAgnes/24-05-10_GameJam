@@ -12,7 +12,9 @@ public class EnemyBT_0 : EnemyBT
     [SerializeField]
     private float attackingAngle = 60f;
     [SerializeField]
-    private float executionInterval = 0.1f;
+    private float attackingRange = 2f;
+    [SerializeField]
+    private float executionInterval = 0.3f;
     [SerializeField]
     private float turnSpeed = 1f;
     [SerializeField]
@@ -40,15 +42,13 @@ public class EnemyBT_0 : EnemyBT
         continuousPatrolAndAttack.AddChild(new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle));
         SequenceNode offensiveModuleSeq = new SequenceNode();
         offensiveModuleSeq.AddChild(new MoveTowardsTargetNode(enemyBT, navMeshAgent));
-        offensiveModuleSeq.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
-        offensiveModuleSeq.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval));
+        offensiveModuleSeq.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval, attackingRange));
         continuousPatrolAndAttack.AddChild(offensiveModuleSeq);
 
         // if target not found, navmesh needed to reset position
         SequenceNode targetLostSeq = new SequenceNode();
         targetLostSeq.AddChild(new ReturnToPatrolNode(enemyBT, patrolPosition, navMeshAgent, 8f));
         targetLostSeq.AddChild(new WanderingNode(enemyBT, 5f, 5f, navMeshAgent));
-        //targetLostSeq.AddChild(new LookAtTargetNode(enemyBT, detectRadius, detectAngle, turnSpeed));
 
 
 

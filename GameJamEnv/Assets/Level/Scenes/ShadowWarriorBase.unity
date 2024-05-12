@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2884.4475, g: 2998.4377, b: 4102.344, a: 1}
+  m_IndirectSpecularColor: {r: 2883.7268, g: 2996.6526, b: 4096.43, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -639,6 +639,10 @@ PrefabInstance:
       propertyPath: sunLight
       value: 
       objectReference: {fileID: 1590111978}
+    - target: {fileID: 6432928377937472353, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1584,10 +1588,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: 1
   target: {fileID: 0}
-  moveSpeed: 1
+  moveSpeed: 7.5
   detectRadius: 10
   detectAngle: 120
   attackingAngle: 60
+  attackingRange: 3
   executionInterval: 0.1
   turnSpeed: 2
   patrolPosition: {fileID: 605874094}

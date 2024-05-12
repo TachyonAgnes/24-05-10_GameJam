@@ -20,7 +20,7 @@ public class MoveTowardsTargetNode : ActionNode
         {
             Vector3 targetPosition = enemyBT.target.position;
             agent.SetDestination(targetPosition);
-            return NodeStatus.RUNNING; 
+            return NodeStatus.SUCCESS; 
         }
         else
         {

@@ -7,13 +7,14 @@ public class AttackTargetNode : ActionNode
     private float lastExecutedTime = 0f;
     private float executionInterval;
     private float attackingAngle;
-    private bool isFirstExecution = true;
+    private float attackingRange;
 
-    public AttackTargetNode(EnemyBT enemyBT, float attackingAngle, float executionInterval)
+    public AttackTargetNode(EnemyBT enemyBT, float attackingAngle, float executionInterval, float attackingRange)
     {
         this.enemyBT = enemyBT;
         this.executionInterval = executionInterval;
         this.attackingAngle = attackingAngle;
+        this.attackingRange = attackingRange;
     }
     public override NodeStatus Execute() {
         if (enemyBT.target == null)
@@ -21,25 +22,20 @@ public class AttackTargetNode : ActionNode
             return NodeStatus.FAILURE;
         }
         target = enemyBT.target;
-
         Vector3 directionToTarget = target.position - enemyBT.transform.position;
-
         float angle = Vector3.Angle(enemyBT.transform.forward, directionToTarget);
-        if (angle < attackingAngle / 2)
+        float distance = Vector3.Distance(enemyBT.transform.position, target.position);
+        if (angle < attackingAngle / 2 && distance <= attackingRange)
         {
-            if (isFirstExecution)
-            {
-                isFirstExecution = false;
-                Attack();
-            }
-            if (Time.time - lastExecutedTime > executionInterval)
+            if (Time.time - lastExecutedTime >= executionInterval)
             {
                 Attack();
                 lastExecutedTime = Time.time;
             }
+            return NodeStatus.SUCCESS; 
         }
 
-        return NodeStatus.SUCCESS;
+        return NodeStatus.FAILURE;
     }
 
     private void Attack() {
