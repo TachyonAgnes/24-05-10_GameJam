@@ -73,7 +73,6 @@ public class CheckTargetInAreaNode : ConditionNode
         if (closestEnemy != null)
         {
             enemyBT.target = closestEnemy.transform;
-            Debug.Log(enemyBT.target.name);
             if (enemyBT.debug)
             {
                 Debug.DrawRay(closestEnemy.transform.position, Vector3.up, Color.red, 5f);
@@ -86,7 +85,6 @@ public class CheckTargetInAreaNode : ConditionNode
 
         // no enemy detected, drop target.
         enemyBT.target = null;
-        Debug.Log("DropTarget");
         agent.speed = moveSpeed_normal;
         return false;
     }

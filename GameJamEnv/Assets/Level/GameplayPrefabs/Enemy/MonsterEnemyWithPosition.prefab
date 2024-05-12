@@ -125,6 +125,10 @@ PrefabInstance:
       value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 5587475206276416326, guid: 4f7b98e305d2d574ea753d5e77f8d777, type: 3}
+      propertyPath: debug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587475206276416326, guid: 4f7b98e305d2d574ea753d5e77f8d777, type: 3}
       propertyPath: patrolPosition
       value: 
       objectReference: {fileID: 6183814322871924907}
