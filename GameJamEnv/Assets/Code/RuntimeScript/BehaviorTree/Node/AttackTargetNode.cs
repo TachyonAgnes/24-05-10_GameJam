@@ -1,13 +1,18 @@
 using UnityEngine;
+using System;
 
 public class AttackTargetNode : ActionNode
 {
+    public event Action OnEnemyAttack;
+
+
     private EnemyBT enemyBT;
     private Transform target;
     private float lastExecutedTime = 0f;
     private float executionInterval;
     private float attackingAngle;
     private float attackingRange;
+    
 
     public AttackTargetNode(EnemyBT enemyBT, float attackingAngle, float executionInterval, float attackingRange)
     {
@@ -39,6 +44,7 @@ public class AttackTargetNode : ActionNode
     }
 
     private void Attack() {
-        Debug.Log("DADADADADADA");
+        Debug.Log("DADADA");
+        OnEnemyAttack?.Invoke();
     }
 }

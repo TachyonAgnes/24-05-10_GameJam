@@ -4,7 +4,9 @@ using UnityEngine.AI;
 public class EnemyBT_0 : EnemyBT
 {
     [SerializeField]
-    private float moveSpeed = 7.5f;
+    private float moveSpeed_normal = 3f;
+    [SerializeField]
+    private float moveSpeed_fast = 6.5f;
     [SerializeField]
     private float detectRadius = 10f;
     [SerializeField]
@@ -22,6 +24,7 @@ public class EnemyBT_0 : EnemyBT
 
     private NavMeshAgent navMeshAgent;
     
+    public AttackTargetNode attackTargetNode { get; private set; }
 
     [ContextMenu("Drop Target")]
     public void DropTarget()
@@ -33,22 +36,25 @@ public class EnemyBT_0 : EnemyBT
     {
         enemyBT = this;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        navMeshAgent.speed = moveSpeed;
+        navMeshAgent.speed = moveSpeed_normal;
 
         root = new SelectorNode();
         root.debug = debug;
 
         ParallelNode continuousPatrolAndAttack = new ParallelNode();
-        continuousPatrolAndAttack.AddChild(new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle));
+        continuousPatrolAndAttack.AddChild(new CheckTargetInAreaNode(enemyBT, detectRadius, detectAngle, navMeshAgent, moveSpeed_fast, moveSpeed_normal));
         SequenceNode offensiveModuleSeq = new SequenceNode();
         offensiveModuleSeq.AddChild(new MoveTowardsTargetNode(enemyBT, navMeshAgent));
-        offensiveModuleSeq.AddChild(new AttackTargetNode(enemyBT, attackingAngle, executionInterval, attackingRange));
+
+        attackTargetNode = new AttackTargetNode(enemyBT, attackingAngle, executionInterval, attackingRange);
+        offensiveModuleSeq.AddChild(attackTargetNode);
+
         continuousPatrolAndAttack.AddChild(offensiveModuleSeq);
 
         // if target not found, navmesh needed to reset position
         SequenceNode targetLostSeq = new SequenceNode();
         targetLostSeq.AddChild(new ReturnToPatrolNode(enemyBT, patrolPosition, navMeshAgent, 8f));
-        targetLostSeq.AddChild(new WanderingNode(enemyBT, 5f, 5f, navMeshAgent));
+        targetLostSeq.AddChild(new WanderingNode(enemyBT, 15f, 5f, navMeshAgent));
 
 
 

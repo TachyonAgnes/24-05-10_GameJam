@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 // this node is used to check if there is an enemy in the area
 // first check if there is an enemy in the sphere area
@@ -11,14 +12,19 @@ public class CheckTargetInAreaNode : ConditionNode
     private EnemyBT enemyBT;
     private float detectRadius;
     private float detectAngle;
-
+    private NavMeshAgent agent;
+    private float moveSpeed_fast;
+    private float moveSpeed_normal;
 
     // initialize
-    public CheckTargetInAreaNode(EnemyBT enemyBT, float detectRadius, float detectAngle)
+    public CheckTargetInAreaNode(EnemyBT enemyBT, float detectRadius, float detectAngle, NavMeshAgent agent, float moveSpeed_fast, float moveSpeed_normal)
     {
         this.enemyBT = enemyBT;
         this.detectRadius = detectRadius;
         this.detectAngle = detectAngle;
+        this.agent = agent;
+        this.moveSpeed_fast = moveSpeed_fast;
+        this.moveSpeed_normal = moveSpeed_normal;
     }
     public override NodeStatus Execute()
     {
@@ -63,9 +69,13 @@ public class CheckTargetInAreaNode : ConditionNode
             {
                 Debug.DrawRay(closestEnemy.transform.position, Vector3.up, Color.red, 5f);
             }
+
+            // increase movement speed
+            agent.speed = moveSpeed_fast;
             return true;
         }
 
+        agent.speed = moveSpeed_normal;
         return false;
     }
 
