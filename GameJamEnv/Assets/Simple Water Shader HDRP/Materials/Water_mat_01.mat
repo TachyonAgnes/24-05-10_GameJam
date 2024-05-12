@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water_mat_01
+  m_Shader: {fileID: -6465566751694194690, guid: f3ff61003df241e4a84f6c4962ed1e66, type: 3}
+  m_Parent: {fileID: 2100000, guid: 1d4b1ef5ff447c948a375ff30ed21f0e, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+    RenderType: Transparent
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - Boolean_ebdbf4f311404f5fb2cd2b6927a304c1: 0
+    - Vector1_07c93c7e34df4237b5dd57255d7f857a: 0.2
+    - Vector1_3849afd7c2eb484893a68ec694cc75b3: 0.1
+    - Vector1_4fa7de5de5304ba799341f5b9bbbf2c0: 0.5
+    - Vector1_6f56a0970372485390c6587863c2374e: -3.5
+    - Vector1_7ab1e13367ff4c17b0a4403edd3d9450: 0.1
+    - Vector1_d70d07d7ef17405a961168abe8e24a3a: 10
+    - _SupportDecals: 1
+    m_Colors:
+    - Color_6a9a916e2c84442984edc20c082efe79: {r: 0, g: 0.50980395, b: 0.00423092, a: 0.68235296}
+    - Color_c9a840f2115c4802ba54d713194f761d: {r: 0.09068072, g: 0.22012573, b: 0.113523945, a: 0.9882353}
+    - Vector2_130994fa54a3486dacf33287c0070f7f: {r: 10, g: 10, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &2916415254519598503
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 

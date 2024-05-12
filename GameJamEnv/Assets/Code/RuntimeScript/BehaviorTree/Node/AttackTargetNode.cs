@@ -35,7 +35,7 @@ public class AttackTargetNode : ActionNode
             return NodeStatus.SUCCESS; 
         }
 
-        return NodeStatus.FAILURE;
+        return NodeStatus.SUCCESS;
     }
 
     private void Attack() {
