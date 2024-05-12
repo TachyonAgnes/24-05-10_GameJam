@@ -1,9 +1,5 @@
-using System.Numerics;
-using Unity.VisualScripting;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.HighDefinition;
 
 public class ProbeSystem : MonoBehaviour
 {
