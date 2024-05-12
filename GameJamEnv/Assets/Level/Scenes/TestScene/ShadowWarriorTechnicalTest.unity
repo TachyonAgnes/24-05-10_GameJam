@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 350.14407, g: 237.78311, b: 219.35782, a: 1}
+  m_IndirectSpecularColor: {r: 2325.4172, g: 2524.4944, b: 3510.9106, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,9 +186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01edbb00fe77a954d8dc3965a0c6451f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moonLight: {fileID: 1621009638}
   isExposedToLight: 0
   isDebug: 0
-  moonLight: {fileID: 1621009638}
+  changeFormTime: 0.5
 --- !u!54 &15156760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1002,11 +1003,6 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
---- !u!108 &980238927 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-  m_PrefabInstance: {fileID: 1331783151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1047480175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,165 +1562,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: flareSize
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: flareTint.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: flareTint.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: flareTint.r
-      value: 0.5660378
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: surfaceTint.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: surfaceTint.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: surfaceTint.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: surfaceTexture
-      value: 
-      objectReference: {fileID: 2800000, guid: 80e8da5a60870cb4bbbef4e233468e1d, type: 3}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: diameterOverride
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: sunLightOverride
-      value: 
-      objectReference: {fileID: 980238927}
-    - target: {fileID: 170961496031258396, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: celestialBodyShadingSource
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 1.6103072e-38
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 6.931e-42
-      objectReference: {fileID: 0}
-    - target: {fileID: 811864433524944331, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 2.524355e-29
-      objectReference: {fileID: 0}
-    - target: {fileID: 850298992846580029, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 850298992846580029, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866077207845868001, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.00000004371139
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866077207845868001, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866077207845868001, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866077207845868001, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866077207845868001, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2878991402550665526, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
       propertyPath: m_Name
       value: WeatherSystem
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958527861933526328, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: FogIntensity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Color.b
-      value: 0.09483396
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Color.g
-      value: 0.11588341
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8616352
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Intensity
-      value: 1540.1556
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_ShadowAngle
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_ColorTemperature
-      value: 6500
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_EnableSpotReflector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_UseColorTemperature
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 7.4936693e+31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 42054020
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 4.5452035e+30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889632451337687540, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 2.7081723e+23
       objectReference: {fileID: 0}
     - target: {fileID: 7657831967235475383, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1765,14 +1605,6 @@ PrefabInstance:
     - target: {fileID: 7657831967235475383, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462014193401098582, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462014193401098582, guid: 9b6aa4ccf5d890e43af214cc345a8569, type: 3}
-      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2201,8 +2033,13 @@ MonoBehaviour:
   RainFactor: 0
   SnowFactor: 0
   FogFactor: 0
-  TimeMultipler: 1.2
-  CurrentCloudType: 0
+  TimeMultipler: 0.2
+  CurrentCloudType: 2
+  TargetTime: 0
+  TimeTransitionDuration: 10
+  TargetRainFactor: 0
+  TargetFogFactor: 0
+  WeatherTransitionDuration: 3
 --- !u!4 &1742313305
 Transform:
   m_ObjectHideFlags: 0
