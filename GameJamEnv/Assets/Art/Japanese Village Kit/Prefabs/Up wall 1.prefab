@@ -1,0 +1,885 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2935105150928460602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816254745381441791}
+  m_Layer: 0
+  m_Name: Up wall 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816254745381441791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2935105150928460602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4137998267706753992}
+  - {fileID: 1848727362497241461}
+  - {fileID: 1294532520653633314}
+  - {fileID: 2682500537929218610}
+  - {fileID: 8078064945562217632}
+  - {fileID: 3804772374259537971}
+  - {fileID: 8262572537612107401}
+  - {fileID: 8463110889402578590}
+  - {fileID: 1725324883680595734}
+  - {fileID: 4674765715147784525}
+  - {fileID: 8668634544201225053}
+  - {fileID: 5096018265961126895}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1294532520654038484
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x2 Plaster B 67 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_RootOrder
+      value: 346
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.400005
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170002
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+--- !u!4 &1294532520653633314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+  m_PrefabInstance: {fileID: 1294532520654038484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1725324883680453250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x1 Plaster A 51 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 535
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+--- !u!4 &1725324883680595734 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+  m_PrefabInstance: {fileID: 1725324883680453250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1848727362497645793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x1 Plaster A 52 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -37.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+--- !u!4 &1848727362497241461 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+  m_PrefabInstance: {fileID: 1848727362497645793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2682500537929623748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x2 Plaster B 57 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_RootOrder
+      value: 411
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+--- !u!4 &2682500537929218610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+  m_PrefabInstance: {fileID: 2682500537929623748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3804772374259419845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x2 Plaster B 54 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_RootOrder
+      value: 464
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -41.400017
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+--- !u!4 &3804772374259537971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+  m_PrefabInstance: {fileID: 3804772374259419845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4137998267706322524
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x1 Plaster A 53 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170002
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+--- !u!4 &4137998267706753992 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+  m_PrefabInstance: {fileID: 4137998267706322524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4674765715147412411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x2 Plaster B 59 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_RootOrder
+      value: 539
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170002
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+--- !u!4 &4674765715147784525 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+  m_PrefabInstance: {fileID: 4674765715147412411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5096018265961215611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x1 Plaster A 48 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 545
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -41.400017
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+--- !u!4 &5096018265961126895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+  m_PrefabInstance: {fileID: 5096018265961215611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8078064945562074710
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x2 Plaster B 56 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_RootOrder
+      value: 426
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170002
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+--- !u!4 &8078064945562217632 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+  m_PrefabInstance: {fileID: 8078064945562074710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8262572537611955327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x2 Plaster B 58 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186822, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_RootOrder
+      value: 515
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -37.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+--- !u!4 &8262572537612107401 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414454, guid: bf566fa60a0d27541b3ec12ee2ec8b44, type: 3}
+  m_PrefabInstance: {fileID: 8262572537611955327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8463110889402424074
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x1 Plaster A 61 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 522
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.400005
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170002
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+--- !u!4 &8463110889402578590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+  m_PrefabInstance: {fileID: 8463110889402424074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8668634544201383625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1816254745381441791}
+    m_Modifications:
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_Name
+      value: Wall Interior Top 2x1 Plaster A 50 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134626, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_RootOrder
+      value: 541
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.170002
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+--- !u!4 &8668634544201225053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 454036, guid: f8465fd5aa913a344b1617be78981fea, type: 3}
+  m_PrefabInstance: {fileID: 8668634544201383625}
+  m_PrefabAsset: {fileID: 0}
