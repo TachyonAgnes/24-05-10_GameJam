@@ -2201,6 +2201,9 @@ MonoBehaviour:
   lightObstacleLayermask:
     serializedVersion: 2
     m_Bits: 281
+  artificalLightLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!54 &4199017195683978790
 Rigidbody:
   m_ObjectHideFlags: 0
