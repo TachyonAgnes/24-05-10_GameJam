@@ -9,6 +9,7 @@ namespace StarterAssets
 	public class StarterAssetsInputs : MonoBehaviour
 	{
 		public event Action OnPlayerAttack;
+		public event Action OnPlayerUltimate;
 
 		[Header("Character Input Values")]
 		public Vector2 move;
@@ -52,6 +53,11 @@ namespace StarterAssets
 		{
 			OnPlayerAttack?.Invoke();
 		}
+
+		public void OnUltimate(InputValue value)
+		{
+			OnPlayerUltimate?.Invoke();
+        }
 #endif
 
 

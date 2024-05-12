@@ -14,6 +14,7 @@ public class PlayerAttack : MonoBehaviour
     private List<EnemyKilledHandler> enemiesInRange = new List<EnemyKilledHandler>();
 
     private Coroutine afterKillEnvVFXCoroutine;
+    private Coroutine bloodMoonCoroutine;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -47,15 +48,29 @@ public class PlayerAttack : MonoBehaviour
     private void Start()
     {
         playerInput.OnPlayerAttack += PlayerInput_OnPlayerAttack;
+        playerInput.OnPlayerUltimate += PlayerInput_OnPlayerUltimate;
     }
+
+
 
     private void OnDestroy()
     {
         playerInput.OnPlayerAttack -= PlayerInput_OnPlayerAttack;
+        playerInput.OnPlayerUltimate -= PlayerInput_OnPlayerUltimate;
+
     }
 
 
 
+    private void PlayerInput_OnPlayerUltimate()
+    {
+        if (bloodMoonCoroutine != null)
+        {
+            StopCoroutine(bloodMoonCoroutine);
+        }
+
+        bloodMoonCoroutine = StartCoroutine(BloodMoonCoroutine());
+    }
 
 
     private void PlayerInput_OnPlayerAttack()
@@ -96,5 +111,14 @@ public class PlayerAttack : MonoBehaviour
         EnvironmentIlluminationSystem.Instance.SetRainny();
         yield return new WaitForSeconds(10f);
         EnvironmentIlluminationSystem.Instance.SetNormal();
+    }
+
+
+
+    private IEnumerator BloodMoonCoroutine()
+    {
+        EnvironmentIlluminationSystem.Instance.SetNightTime();
+        yield return new WaitForSeconds(10f);
+        EnvironmentIlluminationSystem.Instance.SetDayTime();
     }
 }
