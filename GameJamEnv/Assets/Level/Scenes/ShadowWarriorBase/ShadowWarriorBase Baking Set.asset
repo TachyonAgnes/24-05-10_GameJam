@@ -109,6 +109,8 @@ MonoBehaviour:
     m_Keys:
     - Morning
     - Noon
+    - Afternoon
+    - Midnight
     m_Values:
     - sceneHash: -862792556
       cellDataAsset:
@@ -166,6 +168,72 @@ MonoBehaviour:
         m_ElementSize: 131072
         m_StreamableCellDescs:
           m_Keys: 00000000060000000100000007000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+    - sceneHash: -862792556
+      cellDataAsset:
+        m_AssetGUID: ce1ac23046d153243a40f3ed1fb440b9
+        m_StreamableAssetPath: APVStreamingAssets\4e01890a6619a3f44a3ff0a97ff33de8\ce1ac23046d153243a40f3ed1fb440b9.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 030000000c000000040000000d000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+      cellOptionalDataAsset:
+        m_AssetGUID: 9c4d7f3f8506b684fa3ee996454907d4
+        m_StreamableAssetPath: APVStreamingAssets\4e01890a6619a3f44a3ff0a97ff33de8\9c4d7f3f8506b684fa3ee996454907d4.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 030000000c000000040000000d000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+    - sceneHash: -862792556
+      cellDataAsset:
+        m_AssetGUID: 9e1fbaaf74395b54aa1947b40fce6745
+        m_StreamableAssetPath: APVStreamingAssets\4e01890a6619a3f44a3ff0a97ff33de8\9e1fbaaf74395b54aa1947b40fce6745.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 030000000c000000040000000d000000
+          m_Values:
+          - offset: 0
+            elementCount: 1
+          - offset: 131072
+            elementCount: 1
+          - offset: 262144
+            elementCount: 1
+          - offset: 393216
+            elementCount: 1
+        m_Asset: {fileID: 0}
+      cellOptionalDataAsset:
+        m_AssetGUID: 5a088dd01caa42b41a2bc6038fa69047
+        m_StreamableAssetPath: APVStreamingAssets\4e01890a6619a3f44a3ff0a97ff33de8\5a088dd01caa42b41a2bc6038fa69047.bytes
+        m_ElementSize: 131072
+        m_StreamableCellDescs:
+          m_Keys: 030000000c000000040000000d000000
           m_Values:
           - offset: 0
             elementCount: 1
@@ -239,7 +307,7 @@ MonoBehaviour:
   supportLayerMaskChunkSize: 0
   supportOffsetsChunkSize: 98304
   supportDataChunkSize: 262144
-  lightingScenario: Afternoon
+  lightingScenario: Noon
   version: 1
   freezePlacement: 0
   probeOffset: {x: 0, y: 0, z: 0}
