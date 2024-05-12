@@ -8,10 +8,12 @@ public class PlayerShadowSwitcher : MonoBehaviour
     private const string DISSOLVE_OFFSET = "_DissolveOffest";
     private const string HIDE = "Hide";
 
+    [SerializeField] private Animator animator;
     [SerializeField] private LightSensor lightSensor;
     [SerializeField] private List<Material> playerMaterials = new List<Material>();
     [SerializeField] private float dissolveOffsetY_Exposed;
     [SerializeField] private float dissolveOffsetY_Hidden;
+
 
     [Space]
     [SerializeField] private GameObject shadowPlayerIndicator;
@@ -19,11 +21,14 @@ public class PlayerShadowSwitcher : MonoBehaviour
     [Space]
     [SerializeField] private GameObject hideVFXPrefab;
 
-    private Animator animator;
+    [Space]
+    [SerializeField] private AudioClip[] hideInShadowAudioClips;
+    [SerializeField] private AudioClip exposedInLightAudioClip;
+
+
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
         shadowPlayerIndicator.SetActive(false);
     }
 
@@ -31,6 +36,11 @@ public class PlayerShadowSwitcher : MonoBehaviour
     void Start()
     {
         lightSensor.OnExposeStatusChanged += LightSensor_OnExposeStatusChanged;
+    }
+
+    private void OnDestroy()
+    {
+        lightSensor.OnExposeStatusChanged -= LightSensor_OnExposeStatusChanged;
     }
 
     private void LightSensor_OnExposeStatusChanged(bool isExposed)
@@ -47,6 +57,8 @@ public class PlayerShadowSwitcher : MonoBehaviour
         {
             shadowPlayerIndicator.SetActive(false);
         }
+
+        PlaySFX(isExposed);
     }
 
     private void SpawnVFX()
@@ -57,6 +69,21 @@ public class PlayerShadowSwitcher : MonoBehaviour
 
         Destroy(vfx, 0.8f);
     }
+
+
+    private void PlaySFX(bool isExposed)
+    {
+        if(isExposed)
+        {
+            AudioSource.PlayClipAtPoint(exposedInLightAudioClip, transform.TransformPoint(transform.position), 0.5f);
+        }
+        else
+        {
+            var index = UnityEngine.Random.Range(0, hideInShadowAudioClips.Length);
+            AudioSource.PlayClipAtPoint(hideInShadowAudioClips[index], transform.TransformPoint(transform.position), 0.5f);
+        }
+    }
+
 
     private void AnimateDissolveOffset(bool isExposed)
     {

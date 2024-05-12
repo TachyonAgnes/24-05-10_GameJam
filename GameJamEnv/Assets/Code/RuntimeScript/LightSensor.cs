@@ -18,6 +18,9 @@ public class LightSensor : MonoBehaviour
 
     public event Action<bool> OnExposeStatusChanged;
 
+
+    public bool IsExposedToLight { get => isExposedToLight; }
+
     // to start, we need to grab the reference of moonlight
     [SerializeField] private GameObject sunLight;
 
@@ -41,6 +44,17 @@ public class LightSensor : MonoBehaviour
         if(sunLight == null){
             // if it is null, we need to find the sun in the scene
             sunLight = GameObject.Find("Sun").GetComponent<GameObject>();
+        }
+
+        EnemyKilledHandler.OnEnemyKilled += EnemyKilledHandler_OnEnemyKilled;
+    }
+
+    private void EnemyKilledHandler_OnEnemyKilled(object sender, EnemyKilledHandler.OnEnemyKilledEventArgs e)
+    {
+        // remove artifical light
+        if (artificalLightSource.Contains(e._artificalLight))
+        {
+            artificalLightSource.Remove(e._artificalLight);
         }
     }
 

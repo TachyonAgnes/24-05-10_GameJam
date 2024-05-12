@@ -131,7 +131,9 @@ GameObject:
   - component: {fileID: 139158595}
   - component: {fileID: 139158594}
   - component: {fileID: 139158593}
-  m_Layer: 0
+  - component: {fileID: 139158597}
+  - component: {fileID: 139158598}
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 168fcebbbc5fe1f44b72fe51a2227804, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -228,6 +230,47 @@ Transform:
   - {fileID: 1787833707}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &139158597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139158592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69d55bd15c679443a0f68862fedf8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artificalLight: {fileID: 1787833706}
+  enemyPortalVFX: {fileID: 4586609649256886597, guid: ddce227033223044086ff03550c7a5a0, type: 3}
+--- !u!54 &139158598
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139158592}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1917,9 @@ GameObject:
   - component: {fileID: 1247788003}
   - component: {fileID: 1247788002}
   - component: {fileID: 1247788001}
-  m_Layer: 0
+  - component: {fileID: 1247788005}
+  - component: {fileID: 1247788006}
+  m_Layer: 8
   m_Name: Enemy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1925,7 +1970,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 168fcebbbc5fe1f44b72fe51a2227804, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1963,14 +2008,55 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247788000}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07198448, y: -0.085296184, z: 0.006166187, w: 0.99373275}
+  m_LocalRotation: {x: 0.025072698, y: -0.084910944, z: 0.0101791015, w: 0.99602103}
   m_LocalPosition: {x: -0.11, y: 0.42, z: 10.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 586609204}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 8.286, y: -9.812, z: -0.001}
+  m_LocalEulerAnglesHint: {x: 2.962, y: -9.722, z: 0.919}
+--- !u!54 &1247788005
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247788000}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1247788006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247788000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69d55bd15c679443a0f68862fedf8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artificalLight: {fileID: 586609203}
+  enemyPortalVFX: {fileID: 4586609649256886597, guid: ddce227033223044086ff03550c7a5a0, type: 3}
 --- !u!1001 &1402827283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2108,6 +2194,10 @@ PrefabInstance:
       propertyPath: moonLight
       value: 
       objectReference: {fileID: 2114283754330233424}
+    - target: {fileID: 8760951072997060581, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: enemyLayerMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
