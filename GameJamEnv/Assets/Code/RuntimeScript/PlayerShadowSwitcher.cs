@@ -17,6 +17,7 @@ public class PlayerShadowSwitcher : MonoBehaviour
 
     [Space]
     [SerializeField] private GameObject shadowPlayerIndicator;
+    [SerializeField] private GameObject playerHitBox;
 
     [Space]
     [SerializeField] private GameObject hideVFXPrefab;
@@ -50,12 +51,14 @@ public class PlayerShadowSwitcher : MonoBehaviour
         if (!isExposed)
         {
             shadowPlayerIndicator.SetActive(true);
+            playerHitBox.SetActive(false);
             animator.SetTrigger(HIDE);
             SpawnVFX();
         }
         else
         {
             shadowPlayerIndicator.SetActive(false);
+            playerHitBox.SetActive(true);
         }
 
         PlaySFX(isExposed);

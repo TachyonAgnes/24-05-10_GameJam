@@ -15,9 +15,11 @@ public class CheckTargetInAreaNode : ConditionNode
     private NavMeshAgent agent;
     private float moveSpeed_fast;
     private float moveSpeed_normal;
+    private LayerMask obstacleLayerMask;
 
     // initialize
-    public CheckTargetInAreaNode(EnemyBT enemyBT, float detectRadius, float detectAngle, NavMeshAgent agent, float moveSpeed_fast, float moveSpeed_normal)
+    public CheckTargetInAreaNode(EnemyBT enemyBT, float detectRadius, float detectAngle,
+        NavMeshAgent agent, float moveSpeed_fast, float moveSpeed_normal, LayerMask obstacleLayerMask)
     {
         this.enemyBT = enemyBT;
         this.detectRadius = detectRadius;
@@ -25,6 +27,7 @@ public class CheckTargetInAreaNode : ConditionNode
         this.agent = agent;
         this.moveSpeed_fast = moveSpeed_fast;
         this.moveSpeed_normal = moveSpeed_normal;
+        this.obstacleLayerMask = obstacleLayerMask;
     }
     public override NodeStatus Execute()
     {
@@ -49,6 +52,11 @@ public class CheckTargetInAreaNode : ConditionNode
 
         foreach (Collider col in colliders)
         {
+            if(col.transform.name == "PlayerArmature")
+            {
+                continue;
+            }
+
             // if there is an obstacle between the agent and the target, skip
             if (!CheckObstacleBetween(enemyBT.transform, col.transform) && CheckTargetInDetectAngle(enemyBT.transform, col.transform))
             {
@@ -65,6 +73,7 @@ public class CheckTargetInAreaNode : ConditionNode
         if (closestEnemy != null)
         {
             enemyBT.target = closestEnemy.transform;
+            Debug.Log(enemyBT.target.name);
             if (enemyBT.debug)
             {
                 Debug.DrawRay(closestEnemy.transform.position, Vector3.up, Color.red, 5f);
@@ -75,6 +84,9 @@ public class CheckTargetInAreaNode : ConditionNode
             return true;
         }
 
+        // no enemy detected, drop target.
+        enemyBT.target = null;
+        Debug.Log("DropTarget");
         agent.speed = moveSpeed_normal;
         return false;
     }
@@ -85,7 +97,8 @@ public class CheckTargetInAreaNode : ConditionNode
         Vector3 start = self.position;
         Vector3 end = target.position - start;
         float maxDistance = end.magnitude + 2f;
-        bool result = Physics.Raycast(start, end, out RaycastHit hit, maxDistance) && hit.collider.gameObject != target.gameObject;
+        bool result = Physics.Raycast(start, end, out RaycastHit hit, maxDistance, obstacleLayerMask) && hit.collider.gameObject != target.gameObject;
+
         return result;
     }
 

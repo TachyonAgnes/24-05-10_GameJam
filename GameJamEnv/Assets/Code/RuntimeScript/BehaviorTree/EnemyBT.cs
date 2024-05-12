@@ -10,7 +10,7 @@ public class EnemyBT : MonoBehaviour
     protected EnemyBT enemyBT;
     protected SelectorNode root;
 
-    protected virtual void Start()
+    protected virtual void Awake()
     {
     }
 

@@ -20,16 +20,16 @@ public class EnemyKilledHandler : MonoBehaviour
 
     private void Start()
     {
-        MeshRenderer mr = GetComponent<MeshRenderer>();
-        enemyMaterials = new Material[mr.materials.Length];
+        Renderer renderer = transform.GetChild(0).GetComponent<Renderer>();
+        enemyMaterials = new Material[renderer.materials.Length];
 
         // replace enemy materials with material instance.
         for(int i = 0; i < enemyMaterials.Length; i++)
         {
-            enemyMaterials[i] = new Material(mr.materials[i]);
+            enemyMaterials[i] = new Material(renderer.materials[i]);
         }
 
-        mr.materials = enemyMaterials;
+        renderer.materials = enemyMaterials;
     }
 
 
