@@ -2496,6 +2496,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   shadowAttackAudioClip: {fileID: 8300000, guid: 01fc1815f4dcdfe4385f9bb679e96c3d, type: 3}
+  bloodMoonAudioClip: {fileID: 8300000, guid: 1ca07ce8f5b0b9b499c66db693ecedac, type: 3}
 --- !u!135 &4859836208723281064
 SphereCollider:
   m_ObjectHideFlags: 0
