@@ -1,6 +1,7 @@
 using StarterAssets;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerAttack : MonoBehaviour
     [Space]
     [SerializeField] private AudioClip shadowAttackAudioClip;
     private List<EnemyKilledHandler> enemiesInRange = new List<EnemyKilledHandler>();
+
+    private Coroutine afterKillEnvVFXCoroutine;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -72,9 +75,26 @@ public class PlayerAttack : MonoBehaviour
                 // play sfx
                 AudioSource.PlayClipAtPoint(shadowAttackAudioClip, transform.position, 1);
 
+
+                // change weather
+                if(afterKillEnvVFXCoroutine != null)
+                {
+                    StopCoroutine(afterKillEnvVFXCoroutine);
+                }
+
+                afterKillEnvVFXCoroutine = StartCoroutine(AfterKillEnvVFXCoroutine());
             }
 
             enemiesInRange.Remove(enemyToKill);
         }
+    }
+
+
+
+    private IEnumerator AfterKillEnvVFXCoroutine()
+    {
+        EnvironmentIlluminationSystem.Instance.SetRainny();
+        yield return new WaitForSeconds(10f);
+        EnvironmentIlluminationSystem.Instance.SetNormal();
     }
 }

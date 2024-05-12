@@ -1,8 +1,21 @@
 using UnityEngine;
-using UnityEngine.Rendering.HighDefinition;
 
 public class EnvironmentIlluminationSystem : MonoBehaviour
 {
+    public static EnvironmentIlluminationSystem Instance { get; private set; }
+
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+            Instance = null;
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     [SerializeField] ProbeSystem ProbeInterpolationSystem;
     [SerializeField] WeatherManager WeatherInterpolationSystem;
