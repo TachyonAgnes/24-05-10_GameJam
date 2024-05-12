@@ -11,10 +11,13 @@ public class PlayerAttack : MonoBehaviour
 
     [Space]
     [SerializeField] private AudioClip shadowAttackAudioClip;
+    [SerializeField] private AudioClip bloodMoonAudioClip;
     private List<EnemyKilledHandler> enemiesInRange = new List<EnemyKilledHandler>();
 
     private Coroutine afterKillEnvVFXCoroutine;
     private Coroutine bloodMoonCoroutine;
+    private bool bloodMoonReady = true;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -64,12 +67,20 @@ public class PlayerAttack : MonoBehaviour
 
     private void PlayerInput_OnPlayerUltimate()
     {
-        if (bloodMoonCoroutine != null)
+        if(bloodMoonReady)
         {
-            StopCoroutine(bloodMoonCoroutine);
-        }
+            bloodMoonReady = false;
 
-        bloodMoonCoroutine = StartCoroutine(BloodMoonCoroutine());
+            if (bloodMoonCoroutine != null)
+            {
+                StopCoroutine(bloodMoonCoroutine);
+            }
+
+            bloodMoonCoroutine = StartCoroutine(BloodMoonCoroutine());
+
+            // play sfx
+            AudioSource.PlayClipAtPoint(bloodMoonAudioClip, transform.position, 1);
+        }
     }
 
 
@@ -120,5 +131,8 @@ public class PlayerAttack : MonoBehaviour
         EnvironmentIlluminationSystem.Instance.SetNightTime();
         yield return new WaitForSeconds(10f);
         EnvironmentIlluminationSystem.Instance.SetDayTime();
+
+        yield return new WaitForSeconds(20f);
+        bloodMoonReady = true;
     }
 }
