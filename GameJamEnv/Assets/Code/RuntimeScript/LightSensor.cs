@@ -29,6 +29,7 @@ public class LightSensor : MonoBehaviour
     [SerializeField] private bool isDebug = false;
     [SerializeField] private float changeFormTime = 0.5f;
     [SerializeField] private LayerMask lightObstacleLayermask;
+    [SerializeField] private LayerMask artificalLightLayerMask;
     
     // exposed status private variables
     private bool lastRecordedStatus = false;
@@ -97,13 +98,15 @@ public class LightSensor : MonoBehaviour
 
             // do a raycast to check if the playerObj can see the light source
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, lightSource.transform.position - transform.position, out hit))
+            Ray ray = new Ray(transform.position, lightSource.transform.position - transform.position);
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, artificalLightLayerMask))
             {
-                // if target is light source
-                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
-                {
-                    return true;
-                }
+                return true;
+
+                //// if target is light source
+                //if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
+                //{
+                //}
             }
         }
 
@@ -128,13 +131,15 @@ public class LightSensor : MonoBehaviour
                 //}
                 // do a raycast to check if the playerObj can see the light source
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, lightSource.transform.position - transform.position, out hit))
+                Ray ray = new Ray(transform.position, lightSource.transform.position - transform.position);
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, artificalLightLayerMask))
                 {
-                    // if target is light source
-                    if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
-                    {
-                        return true;
-                    }
+                    return true;
+
+                    //// if target is light source
+                    //if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
+                    //{
+                    //}
                 }
 
             }
