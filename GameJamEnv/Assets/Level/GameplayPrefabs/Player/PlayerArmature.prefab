@@ -2026,7 +2026,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7505443439ec7ee47adb0c6f3568f006, type: 3}
   - {fileID: 8300000, guid: 97ba1813e3f8f9f4fa4199272d49e65d, type: 3}
   - {fileID: 8300000, guid: a6d157e71561d09458028b7df6933c18, type: 3}
-  exposedInLightAudioClip: {fileID: 8300000, guid: fcb6252afdc005b419025983ab3da977, type: 3}
+  exposedInLightAudioClip: {fileID: 8300000, guid: 918f6b4638c8535439f870a86fef9e5f, type: 3}
 --- !u!1 &5457547638474025662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,7 +2435,7 @@ MonoBehaviour:
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  shadowAttackAudioClip: {fileID: 8300000, guid: 0eeefa96a76541c4ea77b72b7f0b7067, type: 3}
+  shadowAttackAudioClip: {fileID: 8300000, guid: 01fc1815f4dcdfe4385f9bb679e96c3d, type: 3}
 --- !u!135 &4859836208723281064
 SphereCollider:
   m_ObjectHideFlags: 0
