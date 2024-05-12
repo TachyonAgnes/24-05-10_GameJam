@@ -88,7 +88,6 @@ public class ProbeSystem : MonoBehaviour
             factor = FromAfternoonToNight.Evaluate(timeFactor);
             targetName = NightProbeName;
         }
-        Debug.Log("Target Name:" +  targetName + " the factor:" + factor);
         ProbeReferenceVolume.instance.BlendLightingScenario(targetName, factor);
     }
 

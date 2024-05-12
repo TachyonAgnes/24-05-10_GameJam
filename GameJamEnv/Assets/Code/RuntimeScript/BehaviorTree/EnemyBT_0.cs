@@ -55,13 +55,14 @@ public class EnemyBT_0 : EnemyBT
         // add the offensive module to the root
         root.AddChild(continuousPatrolAndAttack);
         // add the target lost sequence to the root
-        root.AddChild(targetLostSeq);
+        //root.AddChild(targetLostSeq);
 
     }
 
     // Considering some nodes use rigidbody, FixedUpdate is used instead of Update
     protected override void FixedUpdate()
     {
+        Debug.DrawLine(enemyBT.transform.position, enemyBT.transform.position + enemyBT.transform.forward * 100, Color.yellow, 0.01f);
         root.Execute();
     }
 }
