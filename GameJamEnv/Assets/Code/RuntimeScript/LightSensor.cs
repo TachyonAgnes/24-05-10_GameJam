@@ -83,23 +83,12 @@ public class LightSensor : MonoBehaviour
         // if pointlight
         if (lightSource.GetComponent<Light>().type == UnityEngine.LightType.Point)
         {
-            //// do a raycast to check if the playerObj is in the light source
-            //RaycastHit hit;
-            //if (Physics.Raycast(lightSource.transform.position, transform.position - lightSource.transform.position, out hit))
-            //{
-            //    // if the sensor is in the light source
-            //    if (hit.collider.gameObject == this.gameObject)
-            //    {
-            //        return true;
-            //    }
-            //}
-
-            // do a raycast to check if the playerObj can see the light source
+            // do a raycast to check if the playerObj is in the light source
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, lightSource.transform.position - transform.position, out hit))
+            if (Physics.Raycast(lightSource.transform.position, transform.position - lightSource.transform.position, out hit))
             {
-                // if target is light source
-                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
+                // if the sensor is in the light source
+                if (hit.collider.gameObject == this.gameObject)
                 {
                     return true;
                 }
@@ -115,27 +104,16 @@ public class LightSensor : MonoBehaviour
 
             if (angleToSpotlight <= lightSource.GetComponent<Light>().spotAngle / 2)
             {
-                //// do a raycast to check if the playerObj is in the light source
-                //RaycastHit hit;
-                //if (Physics.Raycast(lightSource.transform.position, transform.position - lightSource.transform.position, out hit))
-                //{
-                //    // make sure the playerObj is in the cone of the light source
-                //    if (hit.collider.gameObject == this.gameObject)
-                //    {
-                //        return true;
-                //    }
-                //}
-                // do a raycast to check if the playerObj can see the light source
+                // do a raycast to check if the playerObj is in the light source
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, lightSource.transform.position - transform.position, out hit))
+                if (Physics.Raycast(lightSource.transform.position, transform.position - lightSource.transform.position, out hit))
                 {
-                    // if target is light source
-                    if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ArtificialLight"))
+                    // make sure the playerObj is in the cone of the light source
+                    if (hit.collider.gameObject == this.gameObject)
                     {
                         return true;
                     }
                 }
-
             }
         }
         return false;
