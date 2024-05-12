@@ -12,6 +12,7 @@ public class PlayerAttack : MonoBehaviour
     [Space]
     [SerializeField] private AudioClip shadowAttackAudioClip;
     [SerializeField] private AudioClip bloodMoonAudioClip;
+    [SerializeField] private AudioClip rainClip;
     private List<EnemyKilledHandler> enemiesInRange = new List<EnemyKilledHandler>();
 
     private Coroutine afterKillEnvVFXCoroutine;
@@ -79,7 +80,7 @@ public class PlayerAttack : MonoBehaviour
             bloodMoonCoroutine = StartCoroutine(BloodMoonCoroutine());
 
             // play sfx
-            AudioSource.PlayClipAtPoint(bloodMoonAudioClip, transform.position, 1);
+            AudioPlayer.Instance.PlayClip(bloodMoonAudioClip);
         }
     }
 
@@ -99,7 +100,8 @@ public class PlayerAttack : MonoBehaviour
                 enemyToKill.KilledByShadow();
 
                 // play sfx
-                AudioSource.PlayClipAtPoint(shadowAttackAudioClip, transform.position, 1);
+                AudioPlayer.Instance.PlayClip(shadowAttackAudioClip);
+                AudioPlayer.Instance.PlayClip(rainClip);
 
 
                 // change weather
