@@ -75,12 +75,12 @@ public class PlayerShadowSwitcher : MonoBehaviour
     {
         if(isExposed)
         {
-            AudioSource.PlayClipAtPoint(exposedInLightAudioClip, transform.TransformPoint(transform.position), 0.5f);
+            AudioSource.PlayClipAtPoint(exposedInLightAudioClip, transform.position, 0.5f);
         }
         else
         {
             var index = UnityEngine.Random.Range(0, hideInShadowAudioClips.Length);
-            AudioSource.PlayClipAtPoint(hideInShadowAudioClips[index], transform.TransformPoint(transform.position), 0.5f);
+            AudioSource.PlayClipAtPoint(hideInShadowAudioClips[index], transform.position, 0.5f);
         }
     }
 
