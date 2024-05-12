@@ -1,33 +1,31 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public class MoveTowardsTargetNode : ActionNode
 {
     private EnemyBT enemyBT;
-    private Rigidbody rb;
-    private float moveSpeed;
+    private NavMeshAgent agent;
 
-    public MoveTowardsTargetNode(EnemyBT enemyBT, float moveSpeed)
+    public MoveTowardsTargetNode(EnemyBT enemyBT, NavMeshAgent agent)
     {
         this.enemyBT = enemyBT;
-        this.rb = enemyBT.GetComponent<Rigidbody>();
-        this.moveSpeed = moveSpeed;
+        this.agent = agent;
     }
 
     public override NodeStatus Execute() 
     {
         if (enemyBT.target != null)
         {
-            MoveTowardsTarget();
-            return NodeStatus.SUCCESS;
-        }else{
+            Vector3 targetPosition = enemyBT.target.position;
+            agent.SetDestination(targetPosition);
+            return NodeStatus.RUNNING; 
+        }
+        else
+        {
             return NodeStatus.FAILURE;
         }
     }
 
-    public void MoveTowardsTarget()
-    {
-        Vector3 targetPosition = enemyBT.target.position;
-        Vector3 direction = (targetPosition - enemyBT.transform.position).normalized;
-        rb.linearVelocity = direction * moveSpeed;
-    }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WanderingNode : ActionNode
 {
@@ -7,14 +8,14 @@ private float wanderRadius;
     private float wanderTimerMax;
     private Vector3 wanderPoint;
     private EnemyBT enemyBT;
-    private float moveSpeed;
-    public WanderingNode(EnemyBT enemyBT, float wanderRadius, float wanderTimer, float moveSpeed)
+    private NavMeshAgent agent;
+    public WanderingNode(EnemyBT enemyBT, float wanderRadius, float wanderTimer, NavMeshAgent agent)
     {
         this.enemyBT = enemyBT;
         this.wanderRadius = wanderRadius;
         this.wanderTimer = wanderTimer;
         this.wanderTimerMax = wanderTimer;
-        this.moveSpeed = moveSpeed;
+        this.agent = agent;
     }
     public override NodeStatus Execute()
     {
@@ -25,8 +26,13 @@ private float wanderRadius;
 
         if (wanderTimer >= wanderTimerMax)
         {
-            Vector3 randomDirection = new Vector3(Random.Range(-wanderRadius, wanderRadius), 0, Random.Range(-wanderRadius, wanderRadius));
-            wanderPoint = enemyBT.transform.position + randomDirection; 
+            Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
+            randomDirection += enemyBT.transform.position;
+            NavMeshHit navHit;
+            NavMesh.SamplePosition(randomDirection, out navHit, wanderRadius, -1);
+
+            wanderPoint = navHit.position;
+            agent.SetDestination(wanderPoint);
             wanderTimer = 0;
         }
         else
@@ -35,20 +41,15 @@ private float wanderRadius;
         }
 
 
-        if (Vector3.Distance(enemyBT.transform.position, wanderPoint) < 3f)
+        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
-            return NodeStatus.SUCCESS;
+            if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+            {
+                return NodeStatus.SUCCESS;
+            }
         }
-        else
-        {
-            MoveTo(wanderPoint);
-            return NodeStatus.RUNNING;
-        }
+
+        return NodeStatus.RUNNING;
     }
    
-    private void MoveTo(Vector3 position)
-    {
-        Vector3 direction = (position - enemyBT.transform.position).normalized;
-        enemyBT.transform.position += direction * moveSpeed * Time.deltaTime;
-    }
 }
