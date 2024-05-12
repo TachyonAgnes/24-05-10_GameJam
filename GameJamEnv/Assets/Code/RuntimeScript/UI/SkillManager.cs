@@ -7,13 +7,14 @@ public class SkillManager : MonoBehaviour
     public Image Skill1;
     public Image Skill2;
     public Image Passive;
+
     public Color grey;
     public Color red;
 
     public float ultCooldown = 5f;
     public float skill1Cooldown = 3f;
     public float skill2Cooldown = 3f;
-    public float passiveCooldown = 0.1f;
+    public float passiveCooldown = 1f;
 
     private float ultTimer;
     private float skill1Timer;

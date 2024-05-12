@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 24.123035, g: 0.48676115, b: 0.47670752, a: 1}
+  m_IndirectSpecularColor: {r: 24.057545, g: 0.48994356, b: 0.48401552, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -668,6 +668,8 @@ MonoBehaviour:
   Skill1: {fileID: 948013876}
   Skill2: {fileID: 786768485}
   Passive: {fileID: 1812553525}
+  grey: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  red: {r: 1, g: 0.19215687, b: 0.19215687, a: 1}
   ultCooldown: 5
   skill1Cooldown: 3
   skill2Cooldown: 3
@@ -1223,7 +1225,6 @@ GameObject:
   - component: {fileID: 596266024}
   - component: {fileID: 596266023}
   - component: {fileID: 596266022}
-  - component: {fileID: 596266025}
   m_Layer: 5
   m_Name: ButtonQ
   m_TagString: Untagged
@@ -1334,18 +1335,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596266020}
   m_CullTransparentMesh: 1
---- !u!114 &596266025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596266020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6feedf7171eb727428b7f7a148174b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &605874090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1471,6 @@ GameObject:
   - component: {fileID: 748089546}
   - component: {fileID: 748089545}
   - component: {fileID: 748089544}
-  - component: {fileID: 748089547}
   m_Layer: 5
   m_Name: ButtonE
   m_TagString: Untagged
@@ -1593,18 +1581,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748089542}
   m_CullTransparentMesh: 1
---- !u!114 &748089547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748089542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6feedf7171eb727428b7f7a148174b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &786768483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2100,6 @@ GameObject:
   - component: {fileID: 1007144659}
   - component: {fileID: 1007144658}
   - component: {fileID: 1007144657}
-  - component: {fileID: 1007144660}
   m_Layer: 5
   m_Name: Passive Skill
   m_TagString: Untagged
@@ -2234,18 +2209,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007144655}
   m_CullTransparentMesh: 1
---- !u!114 &1007144660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007144655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6feedf7171eb727428b7f7a148174b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1060797984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,7 +2465,6 @@ GameObject:
   - component: {fileID: 1310781075}
   - component: {fileID: 1310781074}
   - component: {fileID: 1310781073}
-  - component: {fileID: 1310781076}
   m_Layer: 5
   m_Name: ButtonZ
   m_TagString: Untagged
@@ -2613,18 +2575,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310781071}
   m_CullTransparentMesh: 1
---- !u!114 &1310781076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310781071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6feedf7171eb727428b7f7a148174b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1315706270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2942,6 +2892,9 @@ MonoBehaviour:
   executionInterval: 0.1
   turnSpeed: 2
   patrolPosition: {fileID: 605874094}
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!195 &1485438563
 NavMeshAgent:
   m_ObjectHideFlags: 0
